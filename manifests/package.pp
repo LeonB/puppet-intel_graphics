@@ -7,7 +7,7 @@ class intel_graphics::package {
 
     apt::source { 'intel_graphics':
         ensure      => $intel_graphics::ensure,
-        location    => "https://download.01.org/gfx/ubuntu/${$::lsbdistrelease}/main",
+        location    => "https://download.01.org/gfx/ubuntu/${::lsbdistrelease}/main",
         release     => $::lsbdistid,
         repos       => $::lsbdistrelease,
         key         => '2F4AAA66',

@@ -14,12 +14,12 @@
 #
 class intel_graphics::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	# $packages = $::operatingsystem ? {
-	# 	default => ['lxc-intel_graphics', "linux-image-extra-${kernelrelease}"]
-	# }
+  # $packages = $::operatingsystem ? {
+  #   default => ['lxc-intel_graphics', "linux-image-extra-${kernelrelease}"]
+  # }
 
-	$enabled = true
+  $enabled = true
 
 }
